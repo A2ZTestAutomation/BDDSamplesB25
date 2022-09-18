@@ -14,8 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun = false,
 		plugin= {"pretty",
 				"html:target/reports/HtmlReport.html",
-				"rerun:target/failed_scenario.txt",
-				"usage:target/reports/UsageReport",
+//				"rerun:target/failed_scenario.txt",
+//				"usage:target/reports/UsageReport",
 				"json:target/reports/JsonReport.json",
 				"junit:target/reports/JUnitReport.xml"
 				

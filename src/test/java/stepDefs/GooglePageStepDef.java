@@ -59,14 +59,14 @@ public class GooglePageStepDef {
 		String strTitle = driver.getTitle();
 		Assert.assertEquals("Selenium Tutorial - Google", strTitle);
 	}
-	@After
-	public void attachScreenshot(Scenario scenario) throws IOException {
-			if(scenario.isFailed()) {
-				TakesScreenshot screen = (TakesScreenshot)driver;
-				File file = screen.getScreenshotAs(OutputType.FILE);
-				byte[] imgByte = FileUtils.readFileToByteArray(file);
-				scenario.attach(imgByte,  "image/png", "image1");
-			}
-		}
+//	@After
+//	public void attachScreenshot(Scenario scenario) throws IOException {
+//			if(scenario.isFailed()) {
+//				TakesScreenshot screen = (TakesScreenshot)driver;
+//				File file = screen.getScreenshotAs(OutputType.FILE);
+//				byte[] imgByte = FileUtils.readFileToByteArray(file);
+//				scenario.attach(imgByte,  "image/png", "image1");
+//			}
+//		}
 }
 	
