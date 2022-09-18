@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="9.066">
+    <testcase classname="Google Page Search" name="Java Search" time="5.792">
+        <system-out><![CDATA[Given User is on Google Home page...........................................passed
+When User Search Java Tutorial..............................................passed
+Then Should display Java Search Results.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Google Page Search" name="Selenium Search" time="3.121">
+        <failure message="expected:&lt;...um Tutorial - Google[]&gt; but was:&lt;...um Tutorial - Google[ Search]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User is on Google Home page...........................................passed
+When User Search Selenium Tutorial..........................................passed
+Then Should display Selenium Search Results.................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<...um Tutorial - Google[]> but was:<...um Tutorial - Google[ Search]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefs.GooglePageStepDef.should_display_selenium_search_results(GooglePageStepDef.java:60)
+	at ✽.Should display Selenium Search Results(file:///F:/Anandhi/workspace/seleniumWorkspace/Apr2022WS/BDDSampleB25/src/test/resources/features/GoogleSearch.feature:12)
+]]></failure>
+    </testcase>
+</testsuite>

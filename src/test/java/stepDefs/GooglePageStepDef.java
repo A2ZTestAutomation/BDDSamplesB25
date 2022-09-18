@@ -57,7 +57,7 @@ public class GooglePageStepDef {
 	@Then("Should display Selenium Search Results")
 	public void should_display_selenium_search_results() {
 		String strTitle = driver.getTitle();
-		Assert.assertEquals("Selenium Tutorial - Google", strTitle);
+		Assert.assertEquals("Selenium Tutorial - Google Search", strTitle);
 	}
 //	@After
 //	public void attachScreenshot(Scenario scenario) throws IOException {
