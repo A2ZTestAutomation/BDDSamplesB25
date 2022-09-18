@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		publish = true,
-		features = "src//test//resources//features//",
+		features = "src//test//resources//features//GoogleSearch.feature",
 		glue= {"stepDefs"},
 		monochrome=true,
 		dryRun = false,
