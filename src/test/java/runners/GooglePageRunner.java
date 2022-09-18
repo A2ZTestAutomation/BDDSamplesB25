@@ -13,11 +13,11 @@ import io.cucumber.junit.CucumberOptions;
 		monochrome=true,
 		dryRun = false,
 		plugin= {"pretty",
-				"html:target/cucumber/HtmlReport.html",
+				"html:target/cucumber.html",
 //				"rerun:target/failed_scenario.txt",
 //				"usage:target/reports/UsageReport",
-				"json:target/cucumber/JsonReport.json",
-				"junit:target/cucumber/JUnitReport.xml"
+				"json:target/cucumber.json",
+				"junit:target/cucumber.xml"
 				
 				
 		})
